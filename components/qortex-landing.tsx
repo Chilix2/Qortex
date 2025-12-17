@@ -16,6 +16,7 @@ import {
 } from "lucide-react"
 import QortexVortex from "@/components/qortex-vortex"
 import QortexStats from "@/components/qortex-stats"
+import Link from "next/link"
 
 export default function QortexLanding() {
   // Header is now in shared component (QortexHeader)
@@ -1589,13 +1590,15 @@ export default function QortexLanding() {
                   Kostenlose Demo anfragen
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="bg-background/10 backdrop-blur-sm border-border/30 text-[var(--text-dark-heading)] hover:bg-background/20 rounded-xl px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto"
-                >
-                  Kontakt aufnehmen
-                </Button>
+                <Link href="/contact">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="bg-background/10 backdrop-blur-sm border-border/30 text-[var(--text-dark-heading)] hover:bg-background/20 rounded-xl px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto"
+                  >
+                    Kontakt aufnehmen
+                  </Button>
+                </Link>
               </div>
               <div className="card-lines mt-8">
                 <span style={{ width: "100%" }} />
@@ -1617,17 +1620,23 @@ export default function QortexLanding() {
                 <span className="text-lg sm:text-xl font-bold text-gradient-blue">QORTEX</span>
               </div>
               <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-[var(--text-dark-body)]">
-                <a href="#" className="hover:text-primary transition-colors">
-                  Datenschutz
+                <a href="/about" className="hover:text-primary transition-colors">
+                  Über Uns
+                </a>
+                <a href="/careers" className="hover:text-primary transition-colors">
+                  Karriere
+                </a>
+                <a href="/partners" className="hover:text-primary transition-colors">
+                  Partner
+                </a>
+                <a href="/contact" className="hover:text-primary transition-colors">
+                  Kontakt
                 </a>
                 <a href="#" className="hover:text-primary transition-colors">
                   Impressum
                 </a>
                 <a href="#" className="hover:text-primary transition-colors">
-                  AGB
-                </a>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Kontakt
+                  Datenschutz
                 </a>
               </div>
               <p className="text-xs sm:text-sm text-[var(--text-dark-muted)] text-center">

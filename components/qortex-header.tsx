@@ -13,6 +13,11 @@ import {
   Brain,
   Menu,
   X,
+  Book,
+  Newspaper,
+  Users,
+  GraduationCap,
+  LayoutGrid,
 } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
@@ -54,6 +59,20 @@ export default function QortexHeader() {
         { name: "SecOps - Email-Sicherheit", href: "/ai-impacts/secops", icon: Shield },
         { name: "Sales - Call-Daten extrahieren", href: "/ai-impacts/sales", icon: Zap },
         { name: "Marketing - Branchen-Analyse", href: "/ai-impacts/marketing", icon: Zap },
+      ],
+    },
+    pricing: {
+      title: "Preise",
+      href: "/pricing",
+    },
+    resources: {
+      title: "Ressourcen",
+      items: [
+        { name: "Ressourcen Center", href: "/resources", icon: LayoutGrid },
+        { name: "Dokumentation", href: "/resources", icon: Book },
+        { name: "Blog & Updates", href: "/blog", icon: Newspaper },
+        { name: "Community", href: "/community", icon: Users },
+        { name: "Academy", href: "/resources", icon: GraduationCap },
       ],
     },
     news: {
@@ -152,6 +171,42 @@ export default function QortexHeader() {
             {openDropdown === "aiImpacts" && (
               <div className="absolute top-full left-0 mt-2 w-80 rounded-2xl p-3 bg-blue-50 backdrop-blur-xl border border-blue-100 shadow-xl">
                 {menuItems.aiImpacts.items.map((item, i) => (
+                  <Link
+                    key={i}
+                    href={item.href}
+                    className="flex items-center gap-3 px-4 py-2.5 text-slate-700 hover:text-primary hover:bg-slate-50 rounded-xl transition-colors group"
+                  >
+                    <div className="w-8 h-8 rounded-lg border-2 border-slate-300 flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+                      <item.icon className="h-4 w-4 text-slate-600" />
+                    </div>
+                    <span className="text-sm font-medium">{item.name}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Pricing Link */}
+          <Link
+            href={menuItems.pricing.href}
+            className="text-[var(--text-light-heading)] hover:text-primary transition-colors text-sm font-medium"
+          >
+            {menuItems.pricing.title}
+          </Link>
+
+          {/* Resources Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setOpenDropdown("resources")}
+            onMouseLeave={() => setOpenDropdown(null)}
+          >
+            <button className="text-[var(--text-light-heading)] hover:text-primary transition-colors text-sm font-medium flex items-center gap-1">
+              {menuItems.resources.title}
+              <ChevronDown className="h-4 w-4" />
+            </button>
+            {openDropdown === "resources" && (
+              <div className="absolute top-full left-0 mt-2 w-72 rounded-2xl p-3 bg-blue-50 backdrop-blur-xl border border-blue-100 shadow-xl">
+                {menuItems.resources.items.map((item, i) => (
                   <Link
                     key={i}
                     href={item.href}

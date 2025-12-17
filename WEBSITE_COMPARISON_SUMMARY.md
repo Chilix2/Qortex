@@ -27,17 +27,21 @@
 - ✅ `/ai-impacts/sales` - Sales - Call-Daten extrahieren
 - ✅ `/ai-impacts/marketing` - Marketing - Branchen-Analyse
 
+### Standard Pages (New)
+- ✅ `/pricing` - Pricing page with plans (Starter, Pro, Enterprise)
+- ✅ `/resources` - Resources Hub (Documentation, Academy, Community)
+- ✅ `/blog` - Blog page for articles and updates
+- ✅ `/community` - Community page (Discord, Forum, Events)
+
 ### Navigation Updates
 - ✅ Updated navigation menu in `components/qortex-landing.tsx` to link to all new pages
 - ✅ All routes from navigation menu now point to actual pages instead of anchor links
+- ✅ Added "Pricing" to main navigation
+- ✅ Added "Resources" dropdown (linking to Resources, Blog, Community)
 
 ## 📋 Still Missing (Compared to n8n & UiPath)
 
 ### Standard Pages (Common on n8n & UiPath)
-- ⚠️ `/pricing` - Pricing page with plans and pricing tiers
-- ⚠️ `/resources` or `/docs` - Documentation/Resources page
-- ⚠️ `/blog` - Blog page for articles and updates
-- ⚠️ `/community` - Community page (forums, Discord, etc.)
 - ⚠️ `/about` - About Us page
 - ⚠️ `/contact` - Contact page
 - ⚠️ `/partners` - Partners/Integrations page
@@ -45,10 +49,10 @@
 
 ### Additional Features (n8n & UiPath have)
 - ⚠️ Customer Stories/Testimonials page
-- ⚠️ Case Studies page
-- ⚠️ Webinars/Events page
-- ⚠️ Academy/Training page
-- ⚠️ Developer Portal/API Documentation
+- ⚠️ Case Studies page (partially covered by Blog/News)
+- ⚠️ Webinars/Events page (partially covered by Community)
+- ⚠️ Academy/Training page (linked in Resources, but no dedicated content yet)
+- ⚠️ Developer Portal/API Documentation (linked in Resources, but no dedicated content yet)
 
 ## 🔍 Route Status
 
@@ -57,13 +61,17 @@ All routes in the navigation menu are now functional:
 - All Product pages
 - All Use Cases pages
 - All AImpacts pages
+- Pricing page (`/pricing`)
+- Resources pages (`/resources`, `/blog`, `/community`)
 - Home page (`/`)
 
 ### Navigation Structure
 The navigation menu now properly links to:
-- **Produkt**: 6 pages (all working)
-- **Use Cases**: 8 pages (all working)
-- **AImpacts**: 5 pages (all working)
+- **Produkt**: 6 pages
+- **Use Cases**: 8 pages
+- **AImpacts**: 5 pages
+- **Preise**: 1 page
+- **Ressourcen**: Dropdown with 4 items (Hub, Docs, Blog, Community)
 
 ## 📝 Content Comparison
 
@@ -74,36 +82,26 @@ The navigation menu now properly links to:
 - ✅ Security & compliance information
 - ✅ Templates/workflows
 - ✅ AI/ML integration features
+- ✅ Pricing information
+- ✅ Community features overview
+- ✅ Educational resources hub
+- ✅ Blog/News section
 
 ### What's Missing (n8n & UiPath have)
-- ⚠️ Pricing information
-- ⚠️ Community features (forums, Discord)
-- ⚠️ Educational resources (academy, tutorials)
-- ⚠️ Blog/News section
-- ⚠️ Customer testimonials
-- ⚠️ Case studies
-- ⚠️ Developer documentation
+- ⚠️ Customer testimonials (dedicated page)
+- ⚠️ Developer documentation (dedicated deep-dive)
 - ⚠️ Partner program information
+- ⚠️ Detailed About Us / Company info
 
 ## 🎯 Recommendations
 
-1. **High Priority**: Add Pricing page - critical for conversion
-2. **High Priority**: Add Resources/Documentation page - essential for user onboarding
-3. **Medium Priority**: Add Blog page - important for SEO and thought leadership
-4. **Medium Priority**: Add Community page - builds engagement
-5. **Low Priority**: Add About, Contact, Partners, Careers pages
+1. **Low Priority**: Add About, Contact, Partners, Careers pages
+2. **Future**: Build out actual Academy courses and API Documentation content (currently placeholders/overview)
+3. **Future**: Add dedicated Case Studies page (distinct from Blog)
 
 ## ✨ Next Steps
 
-To fully match n8n & UiPath structure, consider adding:
-1. Pricing page with clear tiers
-2. Documentation/Resources section
-3. Blog for content marketing
-4. Community platform integration
-5. Customer success stories
-6. Developer portal
-
-
-
-
-
+1. Create About Us page
+2. Create Contact page
+3. Create Partners page
+4. Create Careers page
