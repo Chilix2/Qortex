@@ -1,0 +1,170 @@
+"use client"
+
+import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Building2, Shield, TrendingUp, FileText, Check, Database, AlertCircle } from "lucide-react"
+import { GlassIcon } from "@/components/ui/glass-icon"
+import Link from "next/link"
+import { ContentCard } from "@/components/content-card"
+
+export default function BankingPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-[#a8b4d4] via-[#8b9dc3] to-[#7c8bc4] pt-24 font-sans text-slate-900">
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-white/10 backdrop-blur-md border-b border-white/20" />
+        <div className="max-w-7xl mx-auto px-6 py-4 relative z-10 flex items-center gap-2 text-sm text-slate-800">
+          <Link href="/" className="hover:text-blue-700 transition-colors flex items-center gap-2 font-medium">
+            <ArrowRight className="w-4 h-4 rotate-180" />
+            Zurück zur Startseite
+          </Link>
+          <span className="text-slate-500">/</span>
+          <span className="text-slate-600">Use Cases</span>
+          <span className="text-slate-500">/</span>
+          <span className="text-blue-700 font-semibold">Banking & Finanzdienstleistungen</span>
+        </div>
+      </div>
+
+      <section className="py-20 px-6 relative">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+            <div className="p-6 bg-blue-500/20 rounded-2xl border border-blue-400/30 backdrop-blur-sm">
+              <GlassIcon icon={Building2} color="blue" size="xl" />
+            </div>
+            <div>
+              <h1 className="text-5xl font-bold mb-4 text-slate-900">Banking & Finanzdienstleistungen</h1>
+              <p className="text-xl text-slate-700 max-w-2xl">Automatisierung für die Finanzbranche: Effizienz, Compliance und Kundenzufriedenheit auf einem neuen Level.</p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <Card className="p-8 glass-card-neon bg-white/20 border-white/30 hover:bg-white/30 hover:scale-[1.02] transition-all duration-300 shadow-xl backdrop-blur-xl">
+              <div className="mb-6">
+                <GlassIcon icon={Shield} color="green" size="lg" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Compliance</h3>
+              <p className="text-slate-700">Automatische Einhaltung regulatorischer Anforderungen und lückenlose Dokumentation.</p>
+            </Card>
+            <Card className="p-8 glass-card-neon bg-white/20 border-white/30 hover:bg-white/30 hover:scale-[1.02] transition-all duration-300 shadow-xl backdrop-blur-xl">
+              <div className="mb-6">
+                <GlassIcon icon={FileText} color="blue" size="lg" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Dokumentenverarbeitung</h3>
+              <p className="text-slate-700">Automatische Verarbeitung von Kreditanträgen, Verträgen und Nachweisen.</p>
+            </Card>
+            <Card className="p-8 glass-card-neon bg-white/20 border-white/30 hover:bg-white/30 hover:scale-[1.02] transition-all duration-300 shadow-xl backdrop-blur-xl">
+              <div className="mb-6">
+                <GlassIcon icon={TrendingUp} color="purple" size="lg" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Risk Management</h3>
+              <p className="text-slate-700">KI-gestützte Risikobewertung und Echtzeit-Überwachung von Transaktionen.</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-white/5 backdrop-blur-sm" />
+        <div className="max-w-7xl mx-auto relative z-10">
+          <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center">Banking Use Cases</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                category: "Kreditwesen",
+                title: "Kreditprüfung",
+                description: "Vollautomatisierte Kreditentscheidung für Standardkredite durch KI-gestützte Bonitätsprüfung.",
+                icon: FileText,
+                color: "blue",
+                features: ["Schufa/Bonitäts-Check", "Dokumenten-Analyse", "Risiko-Scoring"],
+                impact: "15min",
+                impactLabel: "Statt 24h"
+              },
+              {
+                category: "Compliance",
+                title: "KYC & Onboarding",
+                description: "Rechtssichere Identifikation und Überprüfung von Neukunden in Echtzeit.",
+                icon: Shield,
+                color: "green",
+                features: ["Video-Ident", "Sanktionslisten-Check", "Dokumenten-Verifikation"],
+                impact: "100%",
+                impactLabel: "GWG-Konform"
+              },
+              {
+                category: "Betrugsprävention",
+                title: "Fraud Detection",
+                description: "Echtzeit-Überwachung von Transaktionen auf betrügerische Muster mittels Machine Learning.",
+                icon: AlertCircle,
+                color: "red",
+                features: ["Pattern Recognition", "Real-time Blocking", "Auto-Investigation"],
+                impact: "-85%",
+                impactLabel: "Betrugsfälle"
+              },
+              {
+                category: "Backoffice",
+                title: "Zahlungsverkehr",
+                description: "Automatisierte Verarbeitung und Klärung von fehlerhaften oder unklaren Zahlungen.",
+                icon: TrendingUp,
+                color: "cyan",
+                features: ["Reconciliation", "Exception Handling", "SEPA-Processing"],
+                impact: "90%",
+                impactLabel: "Dunkelverarbeitung"
+              },
+              {
+                category: "Kundenservice",
+                title: "Smart Support",
+                description: "Intelligente Vorqualifizierung und Beantwortung von Kundenanfragen zu Konten und Karten.",
+                icon: Building2,
+                color: "purple",
+                features: ["Karten-Sperrung", "Limit-Änderung", "Adress-Änderung"],
+                impact: "24/7",
+                impactLabel: "Verfügbarkeit"
+              },
+              {
+                category: "Reporting",
+                title: "Regulatory Reporting",
+                description: "Automatisierte Erstellung und Übermittlung regulatorischer Meldungen (BaFin, EZB).",
+                icon: Database,
+                color: "orange",
+                features: ["Data Aggregation", "Plausibilitäts-Check", "Auto-Submission"],
+                impact: "0",
+                impactLabel: "Fristüberschreitung"
+              }
+            ].map((useCase, i) => (
+              <ContentCard
+                key={i}
+                // @ts-expect-error icon prop type mismatch
+                category={useCase.category}
+                title={useCase.title}
+                description={useCase.description}
+                // @ts-expect-error icon prop type mismatch
+                icon={useCase.icon}
+                // @ts-expect-error color prop type mismatch
+                color={useCase.color}
+                features={useCase.features}
+                impact={useCase.impact}
+                impactLabel={useCase.impactLabel}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 relative">
+        <div className="max-w-4xl mx-auto text-center">
+          <Card className="p-12 glass-card-neon bg-gradient-to-br from-blue-600/90 to-indigo-700/90 border-white/20 text-white shadow-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Bereit, Ihre Banking-Prozesse zu automatisieren?</h2>
+            <p className="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">Starten Sie noch heute mit QORTEX und transformieren Sie Ihre Finanzprozesse.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-white text-blue-700 hover:bg-blue-50 font-bold rounded-xl shadow-lg">
+                Demo buchen
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-white/10 rounded-xl backdrop-blur-sm">
+                Kostenlos testen
+              </Button>
+            </div>
+          </Card>
+        </div>
+      </section>
+    </div>
+  )
+}
