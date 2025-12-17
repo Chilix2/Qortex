@@ -115,11 +115,8 @@ export default function QortexLanding() {
         {/* Hero Section */}
         <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 min-h-screen flex items-center relative z-10">
           <div className="max-w-6xl mx-auto relative z-10 w-full">
-            <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-              <div>
-                <span className="glass-tag glass-tag-blue mb-4 sm:mb-6 inline-block text-xs sm:text-sm">
-                  Enterprise Automation Platform
-                </span>
+            <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center text-center">
+              <div className="text-center">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--text-light-heading)] mb-4 sm:mb-6 leading-tight">
                   Flexible Workflow-
                   <br />
@@ -131,7 +128,7 @@ export default function QortexLanding() {
                   Bauen Sie mit der Präzision von Code oder der Geschwindigkeit von Drag-and-Drop. QORTEX gibt Ihnen
                   mehr Freiheit, komplexe Workflows zu automatisieren.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8 justify-center">
                   <Button
                     size="lg"
                     className="btn-3d text-primary-foreground border-0 rounded-xl px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto"
@@ -149,7 +146,7 @@ export default function QortexLanding() {
                 </div>
 
                 {/* Trust badges */}
-                <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[var(--text-light-muted)]">
+                <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-xs sm:text-sm text-[var(--text-light-muted)] justify-center">
                   <div className="flex items-center gap-2">
                     <Check className="h-4 w-4 sm:h-5 sm:w-5 text-[var(--accent-success)]" />
                     <span>DSGVO-konform</span>

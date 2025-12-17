@@ -242,3 +242,4 @@ Need speed + Don't mind cost → t3.large
 **Bottom Line**: Start with **t3.medium** for the best balance of performance and cost. You can always change it later!
 
 
+

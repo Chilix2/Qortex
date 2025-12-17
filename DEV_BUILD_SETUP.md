@@ -338,3 +338,4 @@ ssh -L 3001:localhost:3001 -i YOUR_KEY.pem ubuntu@YOUR_IP
 That's it! You're ready to develop fast on your existing EC2 instance. Once the website is finished, just build it and deploy to your web hoster. 🎉
 
 
+
