@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "product": {
+      "title": "Product",
+      "items": {
+        "platform": "Platform Overview",
+        "builder": "Visual Workflow Builder",
+        "ai": "AI Integration",
+        "integrations": "Integrations",
+        "security": "Security & Compliance",
+        "templates": "Templates"
+      }
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "items": {
+        "construction": "Architecture & Construction",
+        "banking": "Banking & Financial Services",
+        "healthcare": "Healthcare",
+        "manufacturing": "Manufacturing",
+        "public": "Public Sector",
+        "retail": "Retail",
+        "legal": "Legal",
+        "telecom": "Telecommunications"
+      }
+    },
+    "impacts": {
+      "title": "AImpacts",
+      "items": {
+        "it": "IT Ops - Employee Onboarding",
+        "support": "Support - WhatsApp with RAG",
+        "secops": "SecOps - Email Security",
+        "sales": "Sales - Extract Call Data",
+        "marketing": "Marketing - Industry Analysis"
+      }
+    },
+    "resources": {
+      "title": "Resources",
+      "items": {
+        "center": "Resource Center",
+        "docs": "Documentation",
+        "blog": "Blog & Updates",
+        "community": "Community",
+        "academy": "Academy"
+      }
+    },
+    "pricing": "Pricing",
+    "news": "News",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "eyebrow": "Enterprise Workflow Engine",
+    "title": "Flexible Workflow Automation for Your Enterprise",
+    "subtitle": "Build with the precision of code or the speed of drag-and-drop. QORTEX gives you the freedom to automate complex workflows.",
+    "primary_cta": "Start for Free",
+    "secondary_cta": "View Demo",
+    "badges": {
+      "gdpr": "GDPR Compliant",
+      "iso": "ISO 27001",
+      "enterprise": "Enterprise-Ready"
+    }
+  },
+  "problems": {
+    "badge": "Challenges",
+    "title": "Manual Processes Cost Time and Money",
+    "subtitle": "Companies lose hours daily on repetitive tasks",
+    "cards": {
+      "time": {
+        "badge": "Problem",
+        "title": "Wasted Time",
+        "desc": "Manual data validation and document checks cost 8-12 hours per process"
+      },
+      "quality": {
+        "badge": "Problem",
+        "title": "Inconsistent Quality",
+        "desc": "Manual processes lead to varying results between teams"
+      },
+      "error": {
+        "badge": "Problem",
+        "title": "Prone to Errors",
+        "desc": "Human errors lead to costly rework and delays"
+      }
+    }
+  },
+  "solutions": {
+    "badge": "The Solution",
+    "title": "QORTEX Automates Your Workflows",
+    "subtitle": "Reduce processing time by 80% with AI-powered automation",
+    "cards": {
+      "validation": {
+        "title": "Automatic Validation",
+        "desc": "AI-powered checking of data and documents in minutes instead of hours"
+      },
+      "consistent": {
+        "title": "Consistent Processes",
+        "desc": "Standardized workflows ensure consistent quality"
+      },
+      "capacity": {
+        "title": "More Capacity",
+        "desc": "Teams focus on strategic work"
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "How It Works",
+    "title": "Automation in 3 Steps",
+    "steps": {
+      "analyze": {
+        "title": "Analyze",
+        "desc": "We analyze your processes and identify automation potential"
+      },
+      "integrate": {
+        "title": "Integrate",
+        "desc": "Our team integrates QORTEX into your existing infrastructure"
+      },
+      "automate": {
+        "title": "Automate",
+        "desc": "Your workflows run automatically, saving you time and costs"
+      }
+    }
+  },
+  "cta_section": {
+    "title": "Ready for Automation?",
+    "subtitle": "Start today and discover how QORTEX can transform your processes.",
+    "demo": "Request Free Demo",
+    "contact": "Get in Touch"
+  },
+  "quelly": {
+    "greeting": "Hi, I'm Quelly!",
+    "action": "Send voice message"
+  }
+}

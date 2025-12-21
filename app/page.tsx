@@ -1,5 +1,5 @@
-import QortexLanding from "@/components/qortex-landing"
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return <QortexLanding />
+export default function RootPage() {
+  redirect("/en");
 }

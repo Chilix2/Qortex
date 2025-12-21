@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "product": {
+      "title": "Produkt",
+      "items": {
+        "platform": "Platform Overview",
+        "builder": "Visual Workflow Builder",
+        "ai": "KI-Integration",
+        "integrations": "Integrationen",
+        "security": "Security & Compliance",
+        "templates": "Templates"
+      }
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "items": {
+        "construction": "Architektur & Bau",
+        "banking": "Banking & Finanzdienstleistungen",
+        "healthcare": "Healthcare",
+        "manufacturing": "Manufacturing",
+        "public": "Öffentlicher Sektor",
+        "retail": "Retail",
+        "legal": "Rechtswesen",
+        "telecom": "Telekommunikation"
+      }
+    },
+    "impacts": {
+      "title": "AImpacts",
+      "items": {
+        "it": "IT Ops - Mitarbeiter onboarden",
+        "support": "Support - WhatsApp mit RAG",
+        "secops": "SecOps - Email-Sicherheit",
+        "sales": "Sales - Call-Daten extrahieren",
+        "marketing": "Marketing - Branchen-Analyse"
+      }
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "items": {
+        "center": "Ressourcen Center",
+        "docs": "Dokumentation",
+        "blog": "Blog & Updates",
+        "community": "Community",
+        "academy": "Academy"
+      }
+    },
+    "pricing": "Preise",
+    "news": "News",
+    "cta": "Kontakt aufnehmen"
+  },
+  "hero": {
+    "eyebrow": "Enterprise Workflow Engine",
+    "title": "Flexible Workflow-Automatisierung für Ihr Unternehmen",
+    "subtitle": "Bauen Sie mit der Präzision von Code oder der Geschwindigkeit von Drag-and-Drop. QORTEX gibt Ihnen mehr Freiheit, komplexe Workflows zu automatisieren.",
+    "primary_cta": "Kostenlos starten",
+    "secondary_cta": "Demo ansehen",
+    "badges": {
+      "gdpr": "DSGVO-konform",
+      "iso": "ISO 27001",
+      "enterprise": "Enterprise-ready"
+    }
+  },
+  "problems": {
+    "badge": "Herausforderungen",
+    "title": "Manuelle Prozesse kosten Zeit und Geld",
+    "subtitle": "Unternehmen verlieren täglich Stunden mit repetitiven Aufgaben",
+    "cards": {
+      "time": {
+        "badge": "Problem",
+        "title": "Zeitverschwendung",
+        "desc": "Manuelle Datenvalidierung und Dokumentenprüfung kosten 8-12 Stunden pro Vorgang"
+      },
+      "quality": {
+        "badge": "Problem",
+        "title": "Inkonsistente Qualität",
+        "desc": "Manuelle Prozesse führen zu unterschiedlichen Ergebnissen zwischen Teams"
+      },
+      "error": {
+        "badge": "Problem",
+        "title": "Fehleranfällig",
+        "desc": "Menschliche Fehler führen zu kostspieligen Nacharbeiten und Verzögerungen"
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Die Lösung",
+    "title": "QORTEX automatisiert Ihre Workflows",
+    "subtitle": "Mit KI-gestützter Automatisierung reduzieren Sie Bearbeitungszeit um 80%",
+    "cards": {
+      "validation": {
+        "title": "Automatische Validierung",
+        "desc": "KI-gestützte Prüfung von Daten und Dokumenten in Minuten statt Stunden"
+      },
+      "consistent": {
+        "title": "Konsistente Prozesse",
+        "desc": "Standardisierte Workflows sorgen für gleichbleibende Qualität"
+      },
+      "capacity": {
+        "title": "Mehr Kapazität",
+        "desc": "Teams fokussieren sich auf strategische Arbeit"
+      }
+    }
+  },
+  "howItWorks": {
+    "badge": "So funktioniert es",
+    "title": "In 3 Schritten zur Automatisierung",
+    "steps": {
+      "analyze": {
+        "title": "Analyse",
+        "desc": "Wir analysieren Ihre Prozesse und identifizieren Automatisierungspotenziale"
+      },
+      "integrate": {
+        "title": "Integration",
+        "desc": "Unser Team integriert QORTEX in Ihre bestehende Infrastruktur"
+      },
+      "automate": {
+        "title": "Automatisierung",
+        "desc": "Ihre Workflows laufen automatisch und Sie sparen Zeit und Kosten"
+      }
+    }
+  },
+  "cta_section": {
+    "title": "Bereit für die Automatisierung?",
+    "subtitle": "Starten Sie noch heute und entdecken Sie, wie QORTEX Ihre Prozesse transformieren kann.",
+    "demo": "Kostenlose Demo anfragen",
+    "contact": "Kontakt aufnehmen"
+  },
+  "quelly": {
+    "greeting": "Hi, ich bin Quelly!",
+    "action": "Sprachnachricht senden"
+  }
+}

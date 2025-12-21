@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles, Search, Filter, Download, Star } from "lucide-react"
 import { GlassIcon } from "@/components/ui/glass-icon"
+import Link from "next/link"
 
 export default function TemplatesPage() {
   const templates = [
@@ -189,18 +190,20 @@ export default function TemplatesPage() {
 
           <div className="grid md:grid-cols-4 gap-6 mb-12">
             {categories.slice(1).map((category, i) => (
-              <Card key={i} className="p-6 glass-card-neon bg-white/20 border-white/30 hover:bg-white/30 hover:scale-[1.05] transition-all duration-300 cursor-pointer text-center shadow-lg">
-                <div className="mb-4 flex justify-center">
-                  <GlassIcon icon={Sparkles} color="orange" size="md" />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">{category}</h3>
-                <p className="text-sm text-slate-600 mb-4 font-medium">
-                  {templates.filter(t => t.category === category).length} Templates
-                </p>
-                <Button variant="outline" size="sm" className="w-full bg-white/40 hover:bg-white/60 border-white/40 text-slate-900">
-                  Anzeigen
-                </Button>
-              </Card>
+              <Link key={i} href={`/produkt/templates/${encodeURIComponent(category)}`}>
+                <Card className="p-6 glass-card-neon bg-white/20 border-white/30 hover:bg-white/30 hover:scale-[1.05] transition-all duration-300 cursor-pointer text-center shadow-lg">
+                  <div className="mb-4 flex justify-center">
+                    <GlassIcon icon={Sparkles} color="orange" size="md" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">{category}</h3>
+                  <p className="text-sm text-slate-600 mb-4 font-medium">
+                    {templates.filter(t => t.category === category).length} Templates
+                  </p>
+                  <Button variant="outline" size="sm" className="w-full bg-white/40 hover:bg-white/60 border-white/40 text-slate-900">
+                    Anzeigen
+                  </Button>
+                </Card>
+              </Link>
             ))}
           </div>
 
